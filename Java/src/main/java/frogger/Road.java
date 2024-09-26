@@ -20,4 +20,10 @@ public class Road {
         boolean[] occupied = getOccupied();
         return occupied[position];
     }
+
+    public boolean isValid(Frogger frogger, int position) {
+        if (position < 0) return false;
+        boolean[] occupied = getOccupied();
+        return position < occupied.length;
+    }
 }
