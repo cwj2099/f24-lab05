@@ -15,4 +15,9 @@ public class Road {
     public boolean[] getOccupied() {
         return this.occupied;
     }
+
+    public boolean isOccupied(Frogger frogger, int position) {
+        boolean[] occupied = getOccupied();
+        return occupied[position];
+    }
 }
